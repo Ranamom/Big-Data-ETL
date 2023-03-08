@@ -24,13 +24,13 @@ GROUP BY r.product_id, p.product_title
 ORDER BY avg_total_votes DESC;
 
 SELECT r.product_id, p.product_title,
-    COUNT(*) FILTER (WHERE v.star_rating = 5) * 100.0 / COUNT(*) AS pct_5_star 
+    AVG(helpful_votes) AS avg_helpful_votes
 FROM review_id_table r
 JOIN vine_table v ON r.review_id = v.review_id
 JOIN products p ON r.product_id = p.product_id
 GROUP BY r.product_id, p.product_title
-ORDER BY pct_5_star DESC 
-LIMIT 3;
+ORDER BY avg_helpful_votes DESC 
+LIMIT 10;
 
 
 
