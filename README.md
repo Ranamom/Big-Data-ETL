@@ -64,6 +64,7 @@ Top 10 products with the highest number of reviews:
 * Summer Infant Multi-Use Deco Extra Tall Walk-Thru Gate, Bronze
 * VTech Communications Safe andSound Digital Audio Monitor
 * Munchkin Nursery Projector and Sound System, White
+
 Top 10 products with the highest average star rating for Vine reviews:
 * Countdown to a Miracle: Daily Pregnancy Calendar
 * Baby's First Journal - Green
@@ -75,6 +76,7 @@ Top 10 products with the highest average star rating for Vine reviews:
 * 5 Pink Gumdrops + One Pacifier Clip
 * Lifefactory 4oz BPA Free Glass Baby Bottles - 4-pack-raspberry and Lilac
 * The Letterheads - Make It Better With A Letter! Kids place mat
+
 Top 10 products with the highest average total votes for Vine reviews:
 * Carter's Bound Keepsake Memory Book of Baby's First 5 Years
 * The Stork OTC Conception Aid
@@ -86,10 +88,12 @@ Top 10 products with the highest average total votes for Vine reviews:
 * BABYBJORN Smart Potty
 * Dorel Living Baby Relax Mikayla Upholstered Swivel Gliding Recliner
 * DaVinci Emily Mini Crib
+
 Top 3 products with the highest percentage of 5-star ratings for Vine reviews:
 * Lifefactory 4oz BPA Free Glass Baby Bottles - 4-pack-raspberry and Lilac
 * God Bless Baby Record Book: A Record Book of Special Memories (Baby Love Bears & Friends)
 * 5 Pink Gumdrops + One Pacifier Clip
+
 #### Vine Analysis
 Based on the data extracted from the queries, it can be concluded that Vine reviews are not entirely free of bias. The total number of reviews is 1,752,932, out of which only 1,2100 reviews are from the Vine program, and 1,740,832 are not from the Vine program. This indicates a significant disparity in the number of reviews between the two programs.
 
