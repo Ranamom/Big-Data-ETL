@@ -50,5 +50,14 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 * While there are no strict requirements for the analysis, consider steps you can take to reduce noisy data, such as filtering for reviews that meet a certain number of helpful votes, total votes, or both.
 
 * Submit a summary of your findings and analysis.
+## Summary
+### Amazon Baby Review Dataset
+Based on the data extracted from the queries, it can be concluded that Vine reviews are not entirely free of bias. The total number of reviews is 1,752,932, out of which only 1,2100 reviews are from the Vine program, and 1,740,832 are not from the Vine program. This indicates a significant disparity in the number of reviews between the two programs.
+
+The average star rating for Vine reviews is 4.29, which is slightly higher than the average star rating for non-Vine reviews, which is 4.16. This indicates that Vine reviews may be biased towards higher ratings. Additionally, the distribution of star ratings for Vine reviews is significantly different from the distribution of star ratings for non-Vine reviews. For example, Vine reviews have a higher proportion of five-star ratings (50.2%) than non-Vine reviews (38.5%).
+
+Furthermore, Vine reviews tend to have more helpful votes and total votes than non-Vine reviews. The average number of helpful votes per Vine review is 3.66, which is significantly higher than the average number of helpful votes per non-Vine review (1.61). The average number of total votes per Vine review is also higher than the average number of total votes per non-Vine review (4.56 vs. 1.61). This suggests that Vine reviews may be more visible and accessible than non-Vine reviews.
+### Amazon Grocery Review Dataset
+
 ## References
 Amazon Customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: [https://s3.amazonaws.com/amazon-reviews-pds/readme.html](https://s3.amazonaws.com/amazon-reviews-pds/readme.html).
