@@ -89,10 +89,17 @@ Top 10 products with the highest average total votes for Vine reviews:
 * Dorel Living Baby Relax Mikayla Upholstered Swivel Gliding Recliner
 * DaVinci Emily Mini Crib
 
-Top 3 products with the highest percentage of 5-star ratings for Vine reviews:
-* Lifefactory 4oz BPA Free Glass Baby Bottles - 4-pack-raspberry and Lilac
-* God Bless Baby Record Book: A Record Book of Special Memories (Baby Love Bears & Friends)
-* 5 Pink Gumdrops + One Pacifier Clip
+Top 10 products with the highest average helpful votes:
+* Carter's Bound Keepsake Memory Book of Baby's First 5 Years
+* The Stork OTC Conception Aid
+* Stork Craft Long Horn Bunk Bed
+* Vulli Sophie The Giraffe Teether
+* Breathable Safer Bumper for Slatted Cribs in White
+* Simple Wishes Hands Free Pumping Bustier/Bra XS/S/M
+* DaVinci Emily Mini Crib
+* Philips Sweet Dreams Cradle Player
+* BABYBJORN Smart Potty
+* Dorel Living Baby Relax Mikayla Upholstered Swivel Gliding Recliner
 
 #### Vine Analysis
 Based on the data extracted from the queries, it can be concluded that Vine reviews are not entirely free of bias. The total number of reviews is 1,752,932, out of which only 1,2100 reviews are from the Vine program, and 1,740,832 are not from the Vine program. This indicates a significant disparity in the number of reviews between the two programs.
@@ -103,7 +110,55 @@ Furthermore, Vine reviews tend to have more helpful votes and total votes than n
 
 Overall, the analysis indicates that Vine reviews may be biased towards higher ratings and may receive more visibility and attention than non-Vine reviews. However, the analysis is limited to the available data and does not account for other factors that may affect the review process, such as the quality of the product, the reviewer's background, or the review platform's policies and procedures. Therefore, further research is needed to provide a more comprehensive understanding of the biases and limitations of the Vine review program.
 ### Analysis of Amazon Grocery Product Reviews Dataset
-Product 
+#### Product Analysis
+Top 10 products with the highest number of reviews:
+* Viva Naturals Organic Extra Virgin Coconut Oil, 16 Ounce
+* San Francisco Bay One Cup
+* Surge Citrus Flavored Soda 16fl oz. 12 cans
+* San Francisco Bay One Cup
+* Keurig, The Original Donut Shop, K-Cup packs
+* Ekobrew Coffee Reusable Filter, Small, Violet
+* Brooklyn Beans Single-cup Coffee for Keurig K-Cup Brewers, 40-Count
+* Nutiva Organic Virgin Coconut Oil, 15 Ounce
+* San Francisco Bay One Cup
+* Grove Square Cappuccino, Single Serve Cup for Keurig K-Cup Brewers
+
+Top 10 products with the highest average star rating for Vine reviews:
+* Milky Way Magic Stars 117g
+* Delgada coffee infused with Chaga 28 Sachets per box
+* Apples Cut-Outs
+* Axis and Allies 1942 Second Edition: A Wwii Strategy Game; Wizards of the Coast
+* Beemster Gouda - Aged 18/24 Months - App. 1.5 Lbs
+* Royal Manna Mix
+* Pure Darjeeling Tea: Loose Leaf
+* 100 Percent All Natural Vanilla Extract
+* Archer Farms Strawberry Dragonfruit Drink Mix 8-0.16 Oz Packets
+* Cadbury Bournville 100g
+
+Top 10 products with the highest average total votes for Vine reviews:
+* Bragg Organic Raw Apple Cider Vinegar
+* Flora Flor-Essence
+* Herbal Secrets Black Seed Oil Natural Dietary Supplement - Cold Pressed Black Cumin Seed Oil from 100% Genuine Nigella Sativa - 16 oz Bottle
+* Gourmet Abundance Fruit Basket Gift
+* Nature's Way Coconut Oil-extra Virgin
+* Spartagen XT Advanced Testosterone Support  60 Capsules
+* Blk Beverages Enriched with Fulvic Acid 16.9 oz Pack of 12
+* Banza Chickpea Pasta
+* Organo Gold Gourmet Black Coffee
+* Emergency Reserve 90 Serving Breakfast, Lunch/Dinner Emergency Food Supply
+
+Top 10 products with the highest average helpful votes:
+* Bragg Organic Raw Apple Cider Vinegar
+* Flora Flor-Essence
+* Herbal Secrets Black Seed Oil Natural Dietary Supplement - Cold Pressed Black Cumin Seed Oil from 100% Genuine Nigella Sativa - 16 oz Bottle
+* Gourmet Abundance Fruit Basket Gift
+* Nature's Way Coconut Oil-extra Virgin
+* Banza Chickpea Pasta
+* Blk Beverages Enriched with Fulvic Acid 16.9 oz Pack of 12
+* Organo Gold Gourmet Black Coffee
+* Albanese Candy, Sugar Free Assorted Fruit Gummi Bears, 5-pound Bag
+* Yogourmet Freeze Dried Kefir Starter, 1 Ounce Boxes (Pack of 2)
+#### Vine Analysis
 Based on the results of the queries, it appears that Vine reviews may not be free of bias.
 
 Firstly, there are significantly fewer Vine reviews (16,612) compared to non-Vine reviews (2,385,819), which could indicate a selection bias in the types of products that are being reviewed.
