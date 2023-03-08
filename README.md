@@ -57,7 +57,19 @@ Based on the data extracted from the queries, it can be concluded that Vine revi
 The average star rating for Vine reviews is 4.29, which is slightly higher than the average star rating for non-Vine reviews, which is 4.16. This indicates that Vine reviews may be biased towards higher ratings. Additionally, the distribution of star ratings for Vine reviews is significantly different from the distribution of star ratings for non-Vine reviews. For example, Vine reviews have a higher proportion of five-star ratings (50.2%) than non-Vine reviews (38.5%).
 
 Furthermore, Vine reviews tend to have more helpful votes and total votes than non-Vine reviews. The average number of helpful votes per Vine review is 3.66, which is significantly higher than the average number of helpful votes per non-Vine review (1.61). The average number of total votes per Vine review is also higher than the average number of total votes per non-Vine review (4.56 vs. 1.61). This suggests that Vine reviews may be more visible and accessible than non-Vine reviews.
-### Amazon Grocery Review Dataset
 
+Overall, the analysis indicates that Vine reviews may be biased towards higher ratings and may receive more visibility and attention than non-Vine reviews. However, the analysis is limited to the available data and does not account for other factors that may affect the review process, such as the quality of the product, the reviewer's background, or the review platform's policies and procedures. Therefore, further research is needed to provide a more comprehensive understanding of the biases and limitations of the Vine review program.
+### Amazon Grocery Review Dataset
+Based on the results of the queries, it appears that Vine reviews may not be free of bias.
+
+Firstly, there are significantly fewer Vine reviews (16,612) compared to non-Vine reviews (2,385,819), which could indicate a selection bias in the types of products that are being reviewed.
+
+Additionally, the average star rating for Vine reviews (3.91) is lower than the average star rating for non-Vine reviews (4.32). This suggests that Vine reviewers may be more critical or discerning in their reviews.
+
+Furthermore, there is a difference in the distribution of star ratings between Vine and non-Vine reviews. Vine reviews tend to have a higher proportion of 4 and 5-star ratings, while non-Vine reviews tend to have a higher proportion of 1, 2, and 3-star ratings. This could indicate that Vine reviewers are more likely to give positive reviews.
+
+Finally, the average number of helpful votes for Vine reviews (0.60) is much lower than the average for non-Vine reviews (1.55), which could indicate that Vine reviews are not as helpful or informative to other customers.
+
+Overall, while these findings do not definitively prove bias in Vine reviews, they do suggest that there may be some differences between Vine and non-Vine reviews that warrant further investigation.
 ## References
 Amazon Customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: [https://s3.amazonaws.com/amazon-reviews-pds/readme.html](https://s3.amazonaws.com/amazon-reviews-pds/readme.html).
