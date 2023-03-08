@@ -14,31 +14,37 @@ Explore the [Amazon Reviews](https://s3.amazonaws.com/amazon-reviews-pds/tsv/ind
 
 Rename each `part_one_starter_code.ipynb` file according to the dataset you are using. For example, if you are going to use the Video Game reviews file, rename file, `part_one_video_games.ipynb`. Repeat the process for the duplicate file you created in Step 2.
 
+* The two datasets utilized in the analysis comprised of Amazon's baby review dataset and grocery review dataset.
 #### Extract the Data
 
 1. Read in each dataset using the correct `header` and `sep` parameters.
+<img width="1214" alt="Screenshot 2023-03-08 at 3 37 05 PM" src="https://user-images.githubusercontent.com/112406455/223857257-cef556ea-6045-4c9e-9b5f-5533f634a5d0.png">
 
 2. Get the number of rows in the dataset.
+<img width="1212" alt="Screenshot 2023-03-08 at 3 37 14 PM" src="https://user-images.githubusercontent.com/112406455/223857420-5d731410-93c6-4efc-8b52-7fd00ccabcaf.png">
 
 #### Transform the Data
 
 For each dataset use the `schema.sql` file located in the Resources folder of the `Starter_Code.zip` file to create the four DataFrames as follows:
 
 1. Create the "review_id_df" DataFrame with the appropriate columns and data types.
+<img width="1214" alt="Screenshot 2023-03-08 at 3 37 30 PM" src="https://user-images.githubusercontent.com/112406455/223857603-dc27d507-86f9-4872-ae61-16f0423f2b7f.png">
 
 2. Create the "products_df" DataFrame that drops the duplicates in the "product_id" and "product_title columns.
+<img width="1212" alt="Screenshot 2023-03-08 at 3 37 38 PM" src="https://user-images.githubusercontent.com/112406455/223857797-d0cb5c5f-0313-401b-acb9-b2f06dd38794.png">
 
 3. Create the "customers_df" DataFrame that groups the data on the "customer_id" by the number of times a customer reviewed a product.
+<img width="1214" alt="Screenshot 2023-03-08 at 3 37 48 PM" src="https://user-images.githubusercontent.com/112406455/223857913-e77540c9-81da-48f2-8c8e-0ddf48598b36.png">
 
 4. Create the "vine_df" DataFrame that has the "review_id", "star_rating", "helpful_votes", "total_votes", and "vine" columns.
+<img width="1212" alt="Screenshot 2023-03-08 at 3 37 57 PM" src="https://user-images.githubusercontent.com/112406455/223858022-916aefd7-ce08-41cd-8d91-8538e07a24ec.png">
 
 #### Load the Data into an RDS Instance
 
 Export each DataFrame into the RDS instance to create four tables for each dataset.
+<img width="1213" alt="Screenshot 2023-03-08 at 3 38 45 PM" src="https://user-images.githubusercontent.com/112406455/223858179-19e2b186-ae25-4d86-b8ed-ff84f6d79ccd.png">
 
 ### Part 2 
-Recall that this part is completely optional; you can complete it as a way to challenge yourself and boost your new skills.
-
 In Amazon's Vine program, reviewers receive free products in exchange for reviews. Amazon has several policies to reduce the bias of its [Vine reviews](https://www.amazon.com/vine/about?ie=UTF8).
 
 ![image](https://user-images.githubusercontent.com/112406455/222976476-fc0ca662-e455-4eaf-b983-5c8040c7380d.png)
@@ -49,6 +55,65 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 
 * While there are no strict requirements for the analysis, consider steps you can take to reduce noisy data, such as filtering for reviews that meet a certain number of helpful votes, total votes, or both.
 
+### SQL Queries Employed in Data Analysis
+#### Product Analysis
+```sql
+SELECT p.product_id, p.product_title, COUNT(*) AS review_count 
+FROM review_id_table r 
+JOIN products p ON r.product_id = p.product_id 
+GROUP BY p.product_id, p.product_title 
+ORDER BY review_count DESC 
+LIMIT 10;
+
+SELECT r.product_id, AVG(v.star_rating) AS avg_rating, p.product_title
+FROM review_id_table r 
+JOIN vine_table v ON r.review_id = v.review_id 
+JOIN products p ON r.product_id = p.product_id
+GROUP BY r.product_id, p.product_title
+ORDER BY avg_rating DESC 
+LIMIT 10;
+
+SELECT r.product_id, 
+    AVG(helpful_votes) AS avg_helpful_votes, 
+    AVG(total_votes) AS avg_total_votes,
+    p.product_title
+FROM review_id_table r
+JOIN vine_table v ON r.review_id = v.review_id
+JOIN products p ON r.product_id = p.product_id
+GROUP BY r.product_id, p.product_title
+ORDER BY avg_total_votes DESC;
+
+SELECT r.product_id, p.product_title,
+    AVG(helpful_votes) AS avg_helpful_votes
+FROM review_id_table r
+JOIN vine_table v ON r.review_id = v.review_id
+JOIN products p ON r.product_id = p.product_id
+GROUP BY r.product_id, p.product_title
+ORDER BY avg_helpful_votes DESC 
+LIMIT 10;
+```
+Vine Analysis
+```sql
+SELECT COUNT(*) FROM review_id_table;
+
+SELECT COUNT(*) FROM vine_table WHERE vine = 'Y';
+
+SELECT COUNT(*) FROM vine_table WHERE vine = 'N';
+
+SELECT AVG(star_rating) FROM vine_table WHERE vine = 'Y';
+
+SELECT AVG(star_rating) FROM vine_table WHERE vine = 'N';
+
+SELECT star_rating, COUNT(*) FROM vine_table WHERE vine = 'Y' GROUP BY star_rating;
+
+SELECT star_rating, COUNT(*) FROM vine_table WHERE vine = 'N' GROUP BY star_rating;
+
+SELECT AVG(helpful_votes) FROM vine_table WHERE vine = 'Y';
+
+SELECT AVG(helpful_votes) FROM vine_table WHERE vine = 'N';
+
+SELECT AVG(total_votes) FROM vine_table WHERE vine = 'Y';
+```
 * Submit a summary of your findings and analysis.
 ## Summary
 ### Analysis of Amazon Baby Product Reviews Dataset
