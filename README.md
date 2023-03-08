@@ -170,5 +170,11 @@ Furthermore, there is a difference in the distribution of star ratings between V
 Finally, the average number of helpful votes for Vine reviews (0.60) is much lower than the average for non-Vine reviews (1.55), which could indicate that Vine reviews are not as helpful or informative to other customers.
 
 Overall, while these findings do not definitively prove bias in Vine reviews, they do suggest that there may be some differences between Vine and non-Vine reviews that warrant further investigation.
+## File Organization and Structure
+The project is structured as follows:
+* `Resources` folder containing `schema.sql`, which outlines the schema for the database tables
+* `part-1` folder containing the Jupyter Notebooks used for the ETL process, including `part_one_baby.ipynb` and `part_one_grocery.ipynb`
+* `part-2` folder containing `product_queries.sql` and `vine_reviews.sql`, which contain SQL queries used for analyzing the data.
+* `README.md` file with information on how to use the repository and any important details about the data and analysis. 
 ## References
 Amazon Customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: [https://s3.amazonaws.com/amazon-reviews-pds/readme.html](https://s3.amazonaws.com/amazon-reviews-pds/readme.html).
