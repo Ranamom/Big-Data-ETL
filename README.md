@@ -51,7 +51,46 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 
 * Submit a summary of your findings and analysis.
 ## Summary
-### Amazon Baby Review Dataset
+### Analysis of Amazon Baby Product Reviews Dataset
+#### Product Analysis 
+Top 10 products with the highest number of reviews:
+* Baby Einstein Take Along Tunes Musical Toy
+* Infant Optics DXR-5 Portable Video Baby Monitor
+* Vulli Sophie la Girafe
+* FridaBaby NoseFrida The SnotSucker Nasal Aspirator
+* Regalo Easy Step Walk Thru Gate, White, Fits Spaces between 29" and 39" Wide
+* Graco Nautilus 3-in-1 Car Seat
+* Baby Banana Toothbrush
+* Summer Infant Multi-Use Deco Extra Tall Walk-Thru Gate, Bronze
+* VTech Communications Safe andSound Digital Audio Monitor
+* Munchkin Nursery Projector and Sound System, White
+Top 10 products with the highest average star rating for Vine reviews:
+* Countdown to a Miracle: Daily Pregnancy Calendar
+* Baby's First Journal - Green
+* Record Books Baby's First Year Memory Keeper
+* Gruffalos Child Sitting 7 Inch Soft Toy
+* Nature's Lullabies First and Second Year Calendars
+* John Lennon Real Love Slipcase 3 Baby Photo Album Set
+* God Bless Baby Record Book: A Record Book of Special Memories (Baby Love Bears & Friends)
+* 5 Pink Gumdrops + One Pacifier Clip
+* Lifefactory 4oz BPA Free Glass Baby Bottles - 4-pack-raspberry and Lilac
+* The Letterheads - Make It Better With A Letter! Kids place mat
+Top 10 products with the highest average total votes for Vine reviews:
+* Carter's Bound Keepsake Memory Book of Baby's First 5 Years
+* The Stork OTC Conception Aid
+* Vulli Sophie The Giraffe Teether
+* Stork Craft Long Horn Bunk Bed
+* Breathable Safer Bumper for Slatted Cribs in White
+* Wash Pod
+* Simple Wishes Hands Free Pumping Bustier/Bra XS/S/M
+* BABYBJORN Smart Potty
+* Dorel Living Baby Relax Mikayla Upholstered Swivel Gliding Recliner
+* DaVinci Emily Mini Crib
+Top 3 products with the highest percentage of 5-star ratings for Vine reviews:
+* Lifefactory 4oz BPA Free Glass Baby Bottles - 4-pack-raspberry and Lilac
+* God Bless Baby Record Book: A Record Book of Special Memories (Baby Love Bears & Friends)
+* 5 Pink Gumdrops + One Pacifier Clip
+#### Vine Analysis
 Based on the data extracted from the queries, it can be concluded that Vine reviews are not entirely free of bias. The total number of reviews is 1,752,932, out of which only 1,2100 reviews are from the Vine program, and 1,740,832 are not from the Vine program. This indicates a significant disparity in the number of reviews between the two programs.
 
 The average star rating for Vine reviews is 4.29, which is slightly higher than the average star rating for non-Vine reviews, which is 4.16. This indicates that Vine reviews may be biased towards higher ratings. Additionally, the distribution of star ratings for Vine reviews is significantly different from the distribution of star ratings for non-Vine reviews. For example, Vine reviews have a higher proportion of five-star ratings (50.2%) than non-Vine reviews (38.5%).
@@ -59,7 +98,8 @@ The average star rating for Vine reviews is 4.29, which is slightly higher than 
 Furthermore, Vine reviews tend to have more helpful votes and total votes than non-Vine reviews. The average number of helpful votes per Vine review is 3.66, which is significantly higher than the average number of helpful votes per non-Vine review (1.61). The average number of total votes per Vine review is also higher than the average number of total votes per non-Vine review (4.56 vs. 1.61). This suggests that Vine reviews may be more visible and accessible than non-Vine reviews.
 
 Overall, the analysis indicates that Vine reviews may be biased towards higher ratings and may receive more visibility and attention than non-Vine reviews. However, the analysis is limited to the available data and does not account for other factors that may affect the review process, such as the quality of the product, the reviewer's background, or the review platform's policies and procedures. Therefore, further research is needed to provide a more comprehensive understanding of the biases and limitations of the Vine review program.
-### Amazon Grocery Review Dataset
+### Analysis of Amazon Grocery Product Reviews Dataset
+Product 
 Based on the results of the queries, it appears that Vine reviews may not be free of bias.
 
 Firstly, there are significantly fewer Vine reviews (16,612) compared to non-Vine reviews (2,385,819), which could indicate a selection bias in the types of products that are being reviewed.
